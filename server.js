@@ -17,7 +17,7 @@ app.get('/PROFESSION', function (req, res) {
     res.sendFile(path.join(__dirname,'ui','profession.html'));
 });
 
-app.get('/MY EXPERIENCE', function (req, res) {
+app.get('/MYEXPERIENCE', function (req, res) {
      res.sendFile(path.join(__dirname,'ui','myexperience.html'));
 
 });
