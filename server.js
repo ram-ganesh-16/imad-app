@@ -10,15 +10,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.send('ur big asshole');
+  res.send('article one is available');
 });
 
 app.get('/article-two', function (req, res) {
-  res.send('go fuck urself');
+  res.send('article two is available');
 });
 
 app.get('/article-three', function (req, res) {
-  res.send('come suck my dick');
+  res.send('article three is available');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
