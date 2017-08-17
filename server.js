@@ -18,7 +18,8 @@ app.get('/PROFESSION', function (req, res) {
 });
 
 app.get('/MY EXPERIENCE', function (req, res) {
-  res.send('article three is available');
+     res.sendFile(path.join(__dirname,'ui','profession.html'));
+
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
