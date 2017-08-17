@@ -17,8 +17,8 @@ app.get('/PROFESSION', function (req, res) {
     res.sendFile(path.join(__dirname,'ui','profession.html'));
 });
 
-app.get('/MYEXPERIENCE', function (req, res) {
-     res.sendFile(path.join(__dirname,'ui','.html'));
+app.get('/myexperience', function (req, res) {
+     res.sendFile(path.join(__dirname,'ui','myexperience.html'));
 
 });
 app.get('/ui/style.css', function (req, res) {
