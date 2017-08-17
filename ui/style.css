@@ -3,6 +3,17 @@ body {
     background-color: lightgrey;
     margin-top: 75px;
 }
+h1{
+text-decoration: underline;
+}
+
+P {
+  color: black;
+}
+
+Body {
+  Background: lightgrey;
+}
 
 .center {
     text-align: left;
@@ -18,16 +29,5 @@ body {
 
 .img-medium {
     height: 200px;
-}
-h1{
-text-decoration: underline;
-}
-
-P {
-  color: black;
-}
-
-Body {
-  Background: lightgrey;
 }
 
