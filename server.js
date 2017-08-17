@@ -9,16 +9,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article one', function (req, res) {
-  res.sendFile('ur big asshole');
+app.get('/article-one', function (req, res) {
+  res.send('ur big asshole');
 });
 
-app.get('/article two', function (req, res) {
-  res.sendFile('go fuck urself');
+app.get('/article-two', function (req, res) {
+  res.send('go fuck urself');
 });
 
-app.get('/article three', function (req, res) {
-  res.sendFile('come suck my dick');
+app.get('/article-three', function (req, res) {
+  res.send('come suck my dick');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
