@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var personal  ={
 
-    tilte: 'personal',
+    ganesh: 'personal',
     heading:'profession',
     content:
     ` 
@@ -28,7 +28,7 @@ var personal  ={
 };
 
 function createtemplate(data){
-    var title= data.title;
+    var ganesh= data.ganesh;
     var heading=data.heading;
     var content= data.content;
     
@@ -53,7 +53,9 @@ function createtemplate(data){
         <div>
             <a href="/ui/style.css">styleofwebapp</a>
         </div>
-        
+         <h1>
+         ${ganesh}
+         </h1>
             
             <h1>
                 ${heading}
