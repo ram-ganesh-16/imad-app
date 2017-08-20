@@ -5,12 +5,17 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content  ={
+var personal  ={
 
     tilte: 'personal',
     heading:'profession',
-    content: ` <p>
+    content:
+    ` 
+    
+            <p>
                 this is my special qualifications
+            </p>
+            <p>
                 list of my work experiences
                    1.    i have finished online certificate courses from nptel 
                         2.    i have created my own web app from my online certificates course
@@ -22,6 +27,39 @@ var content  ={
     
 };
 
+var htmlTemplate= `<!doctype html>
+    <head>
+        <title>
+            personal
+            <hr/>
+        </title>
+        <meta name="viewport" content="width=device-width,inital scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+
+     </head>
+     <body>
+     
+     <div class=container>
+        <div>
+            <a href="/">home</a>
+        </div>
+     
+        <div>
+            <a href="/ui/style.css">styleofwebapp</a>
+        </div>
+         <h1>
+             personal
+         </h1>
+            
+            <h1>
+                profession
+            </h1>
+            
+       </div> 
+    </body>
+</html>
+
+`;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
