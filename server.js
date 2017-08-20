@@ -116,7 +116,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/personal', function (req, res) {
-  res.send((createtemplate(ramganesh)));
+  res.send((createtemplate(personal)));
 });
 
 app.get('/PROFESSION', function (req, res) {
