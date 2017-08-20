@@ -5,8 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-'article-one'  :{
+var personal={
 
     ganesh: 'personal',
     heading:'profession',
@@ -26,8 +25,8 @@ var articles={
     
     
     
-},
-'article-two':{
+};
+var profession={
     ganesh: 'personal',
     heading:'profession',
     content:
@@ -44,8 +43,8 @@ var articles={
     
     
     
-    },
-'article-three'    :{ 
+    };
+var mylife={ 
     ganesh: 'personal',
     heading:'profession',
     content:
@@ -59,10 +58,6 @@ var articles={
                    1.    i have finished online certificate courses from nptel 
                         2.    i have created my own web app from my online certificates course
             </p>`
-    
-    
-    
-    },
     
 
 };
@@ -115,9 +110,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articleName', function (req, res) {
-    var articlesName=req.params.articleName;
-     res.send((createtemplate(articles[articleName])));
+app.get('/personal', function (req, res) {
+     res.send((createtemplate(personal)));
 });
 
 app.get('/PROFESSION', function (req, res) {
