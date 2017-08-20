@@ -61,8 +61,6 @@ var mylife={
     
 
 };
-
-
 function createtemplate(data){
     var ganesh= data.ganesh;
     var heading=data.heading;
@@ -109,7 +107,11 @@ function createtemplate(data){
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var counter=0;
+app.get('/counter'),function(req, res) {
+    counter=counter+1;
+    res.send(counter,toString());
+};
 app.get('/personal', function (req, res) {
      res.send((createtemplate(personal)));
 });
