@@ -58,7 +58,7 @@ function createtemplate(data){
          </h1>
             
             <h1>
-                ${title}
+                ${heading}
             </h1>
             <div>
             ${content}
