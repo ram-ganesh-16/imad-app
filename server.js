@@ -53,9 +53,7 @@ function createtemplate(data){
         <div>
             <a href="/ui/style.css">styleofwebapp</a>
         </div>
-         <h1>
-         ${heading}
-         </h1>
+        
             
             <h1>
                 ${heading}
