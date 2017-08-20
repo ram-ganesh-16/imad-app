@@ -116,8 +116,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/personal', function (req, res) {
-    var articleName=req.params.articleName;
-     res.send((createtemplate(articles[articleName])));
+    var articles=req.params.articles;
+     res.send((createtemplate(articles)));
 });
 
 app.get('/PROFESSION', function (req, res) {
