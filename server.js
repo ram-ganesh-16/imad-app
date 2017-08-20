@@ -115,7 +115,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ramganesh', function (req, res) {
+app.get('/PERSONAL', function (req, res) {
   res.send((createtemplate(personal)));
 });
 
