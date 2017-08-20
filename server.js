@@ -58,7 +58,7 @@ function createtemplate(data){
          </h1>
             
             <h1>
-                personal
+                ${title}
             </h1>
             <div>
             ${content}
