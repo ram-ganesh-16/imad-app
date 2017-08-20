@@ -19,7 +19,7 @@ var button = document.getElementById('counter');
   
 };
 
-var submit=document.getElementById('submit_button');
+var submit=document.getElementById('submit_btn');
 submit.onclick=function(){
      var request = new XMLHttpRequest();
   request.onreadystatechange=function(){
