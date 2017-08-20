@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var personal  ={
+var ramreddy={
+personal :{
 
     ganesh: 'personal',
     heading:'profession',
@@ -25,6 +26,7 @@ var personal  ={
     
     
     
+},
 };
 
 function createtemplate(data){
