@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles={
-'personal'  :{
+'article-one'  :{
 
     ganesh: 'personal',
     heading:'profession',
@@ -27,7 +27,7 @@ var articles={
     
     
 },
-'profession':{
+'article-two':{
     ganesh: 'personal',
     heading:'profession',
     content:
@@ -45,7 +45,7 @@ var articles={
     
     
     },
-'mylife'    :{ 
+'article-three'    :{ 
     ganesh: 'personal',
     heading:'profession',
     content:
@@ -115,9 +115,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/personal', function (req, res) {
-    var articles=req.params.articles;
-     res.send((createtemplate(articles)));
+app.get('/articles', function (req, res) {
+    var articlesName=req.params.articleName;
+     res.send((createtemplate(articles[articleName])));
 });
 
 app.get('/PROFESSION', function (req, res) {
