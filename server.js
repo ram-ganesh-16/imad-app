@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var ramganesh={
+var articles={
 personal :{
 
     ganesh: 'personal',
@@ -115,7 +115,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/PERSONAL', function (req, res) {
+app.get('/articles', function (req, res) {
   res.send((createtemplate(personal)));
 });
 
