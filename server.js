@@ -27,7 +27,13 @@ var personal  ={
     
 };
 
-var htmlTemplate= `<!doctype html>
+function createtemplate(data){
+    var title= data.title;
+    var heading=data.heading;
+    var content= data.content;
+    
+   var htmlTemplate=
+    `<!doctype html>
     <head>
         <title>
             personal
@@ -62,12 +68,14 @@ var htmlTemplate= `<!doctype html>
 </html>
 
 `;
+    return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/PERSONAL', function (req, res) {
-  res.sendFile(path.join(__dirname,'ui','personal.html'));
+  res.send((createtemplate(personal)));
 });
 
 app.get('/PROFESSION', function (req, res) {
