@@ -5,6 +5,23 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content  ={
+
+    tilte: 'personal',
+    heading:'profession',
+    content: ` <p>
+                this is my special qualifications
+                list of my work experiences
+                   1.    i have finished online certificate courses from nptel 
+                        2.    i have created my own web app from my online certificates course
+            </p>`
+    
+    
+    
+    
+    
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
