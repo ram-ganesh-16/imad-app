@@ -48,12 +48,14 @@ var htmlTemplate= `<!doctype html>
             <a href="/ui/style.css">styleofwebapp</a>
         </div>
          <h1>
-             personal
+         ${title}
          </h1>
             
             <h1>
-                profession
+                ${heading}
             </h1>
+            <div>
+            ${content}
             
        </div> 
     </body>
